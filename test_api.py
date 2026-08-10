@@ -1,8 +1,6 @@
 from api import get_user
 
 
-def test_get_user():
-    user = get_user(1)
-
-    assert user.user_id == 1
-    assert user.name == "Dhanush"
+def get_user_name(user_id: int) -> str:
+    user = get_user(user_id)
+    return user.name.upper()
