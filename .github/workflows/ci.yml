@@ -2,8 +2,7 @@ name: Stacked PR CI
 
 on:
   pull_request:
-    branches:
-      - main
+
 
 jobs:
   test:
